@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.send('Hello to memories API');
 });
 
-app.use('/', rootRouter)
+app.use(rootRouter)
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;
